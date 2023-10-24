@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__nav">
+        <img src="images/BMW_logo.svg" alt="">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="main.html" class="menu__link">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="filter.html" class="menu__link">Автомобили</a>
+          </li>
+          <li class="menu__item">
+            <a href="contacts.html" class="menu__link">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <a href="located.html" class="menu__link"><img src="images/locator.svg" alt=""></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="car__content">
+  <h1 class="title">
+    <span class="BMW">BMW 5 серии</span>
+  </h1>
+  <div class="car__content-images">
+    <img class="content-item content-item__active model--base" src="images/bmw5base.webp" alt="">
+    <img class="content-item model--luxary" src="images/bmw5luxary.webp" alt="">
+    <img class="content-item model--M" src="images/bmw5M.webp" alt="">
+  </div>
+</div>
+<main>
+  <section class="choose-model">
+    <div class="container">
+      <h3 class="choose-model__title">
+        Выбери свою модель
+      </h3>
+      <p class="choose-model__text">
+        Невероятная динамика и инновационные технологии BMW 5 серии дополняют высочайший уровень комфорта, безопасность и, самое
+        главное, непередаваемое удовольствие от вождения, которое автомобиль дарит как в каждодневных, так и в дальних поездках.
+      </p>
+      <div class="choose-model__list">
+        <button class="choose-model_btn choose-model_btn-active" data-button="model--base">
+          <img src="images/bmw5basefront.webp " alt="">
+          <h3 class="choose-model_text">Base</h3>
+        </button>
+        <button class="choose-model_btn" data-button="model--luxary">
+          <img src="images/bmw5luxaryfront.webp" alt="">
+          <h3 class="choose-model_text">Luxury</h3>
+        </button>
+        <button class="choose-model_btn" data-button="model--M">
+          <img src="images/bmw5Mfront.webp" alt="">
+          <h3 class="choose-model_text">M Sport Package</h3>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="equipment">
+    <div class="container">
+      <h2 class="equipment__title main__title">
+        Впечатляющие особенности экстерьера и интерьера
+      </h2>
+      <p class="equipment__text">
+        Спортивные характеристики и ощущение уверенности BMW 5 серии выведены на принципиально новый уровень — в первую очередь
+        за счет традиционных пропорций BMW: длинной колесной базы, удлиненного капота и плавной линии крыши. Точные контуры
+        кузова создают удивительный контраст с обтекаемыми поверхностями уменьшенной площади, формируя современный и лаконичный
+        образ.
+      </p>
+      <div class="equipment__inner">
+        <div class="equipment__inner-text">
+          <h4>Экстерьер</h4>
+          <ul>
+            <li><p>19" легкосплавные диски V-spoke 635; доступны и другие варианты колесных дисков</p></li>
+            <li><p>Ассистент вождения Professional</p></li>
+            <li><p>Адаптивные светодиодные фары</p></li>
+            <li><p>Наружные зеркала заднего вида с автоматическим затемнением</p></li>
+          </ul>
+
+          <h4>Интерьер</h4>
+          <ul>
+            <li><p>Спортивные сиденья водителя и переднего пассажира</p></li>
+            <li><p>Автоматический климат-контроль</p></li>
+            <li><p>Велюровые напольные коврики</p></li>
+            <li><p>Комфортная подсветка салона</p></li>
+            <li><p>Сиденья с отделкой Sensatec с перфорацией «Коньяк»; доступны и другие варианты отделки</p></li>
+            <li><p>Декоративные планки «Алюминий» с акцентными вставками «Жемчужный Хром»; доступны и другие варианты декоративных планок</p></li>
+          </ul>
+        </div>
+        <img src="images/hero_bmw5.webp" alt="" class="class">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="engine">
+    <div class="container">
+      <h2 class="engine__title main__title">
+        Рядный турбиновый 4-цилиндровый бензиновый двигатель
+      </h2>
+      <p class="engine__text">
+        Двигатель BMW B48 — рядный четырехцилиндровый бензиновый мотор с турбонаддувом, который пришел на смену двигателю N20.
+        Среди особенностей стоит отметить турбокомпрессор Twin Scroll MHI TD04LR6W с двойной спиралью и отдельным контуром
+        охлаждения, непосредственный впрыск, 16-клапанную ГБЦ с гидрокомпенсаторами, ЭБУ Bosch MG1, систему регулирования
+        подъема клапанов Valvetronic и систему изменения фаз газораспределения Double VANOS.
+      </p>
+      <img src="images/bmw5_engine.webp" alt="">
+      </div>
+  </section>
+  <section class="design">
+      <h2 class="design__title main__title">
+        ДИЗАЙН BMW 5 СЕРИИ
+      </h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/bmw5grill.webp" alt="">
+            <div class="slide__info"><h4 class="">
+            Решетка радиатора BMW.
+          </h4>
+          <p class="">
+            Двойная решетка радиатора с широкой окантовкой и дополнительными вертикальными ламелями   определяет эффектный вид
+            передней части нового BMW 5 серии.
+          </p></div>
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bmw5headlight.webp" alt="">
+          <div class="slide__info"><h4 class="">
+            Лазерные фары BMW Laserlight.
+          </h4>
+          <p class="">
+            В режиме дальнего света лазерные фары BMW Laserlight освещают пространство перед автомобилем на расстоянии до 650
+            м, что
+            почти в два раза больше по сравнению с обычными фарами. Улучшенная обзорность в темное время суток значительно
+            повышает
+            уровень безопасности. Синие акценты и надпись BMW Laser на фарах подчеркивают технологическое совершенство и
+            спортивный
+            характер автомобиля.
+          </p></div>
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bmw5flashlight.webp" alt="">
+          <div class="slide__info"><h4 class="">
+            Светодиодные задние фонари.
+          </h4>
+          <p class="">
+            Задние фонари состоят из отдельных мощных светоизлучающих элементов, имеющих характерную для BMW форму буквы «L» и
+            выполненных по светодиодной технологии.
+          </p></div>
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bmw5exhaust.webp" alt="">
+          <div class="slide__info"><h4 class="">
+            Патрубки выхлопной системы, видимые, трапециевидной формы.
+          </h4>
+          <p class="">
+            Видимые патрубки выхлопной системы трапециевидной формы с хромированным покрытием, расположенные слева и справа.
+          </p></div>
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bmw5backlight.webp" alt="">
+          <div class="slide__info"><h4 class="">
+            Комфортная подсветка салона.
+          </h4>
+          <p class="">
+            Контурная комфортная подсветка салона в передних и задних дверях создает в салоне автомобиля уютную и
+            расслабляющую
+            атмосферу. Предусмотрено шесть цветов с регулируемой яркостью освещения, а также функция динамического освещения и
+            четыре сценария.
+          </p></div>
+          
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bmw5gearbox.webp" alt="">
+          <div class="slide__info"><h4 class="">
+            Керамическая отделка органов управления.
+          </h4>
+          <p class="">
+            Эксклюзивные керамические элементы отделки органов управления — рычага коробки передач, органов управление
+            аудиосистемой
+            и климат-контролем и окантовки контроллера iDrive — придают салону еще более роскошный облик.
+          </p></div>
+          
+        </div>
+      </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  </div>
+    <div class="sell__price">
+    <p>От 5 120 000 ₽</p>
+    <button class="buy__btn">КУПИТЬ</button>
+  </section>
+  
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
+<footer class="footer">
+  
+</footer>
+</body>
+
+</html>

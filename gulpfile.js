@@ -74,6 +74,16 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
+function secondscripts() {
+  return src([
+    'app/js/filter.js'
+    ])
+    .pipe(concat('filter.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+}
+
 function styles() {
   return src('app/scss/style.scss')
     .pipe(autoPrefixer({ overrideBrowserslist: ['last 10 version']}))
@@ -91,6 +101,7 @@ function styles() {
     });
     watch(['app/scss/style.scss'], styles)
     watch(['app/images/src'], images)
+    watch(['app/js/filter.js'], secondscripts)
     watch(['app/js/main.js'], scripts)
     watch(['app/components/*', 'app/pages/*'], pages)
     watch(['app/**/*.html']).on('change', browserSync.reload)
@@ -106,12 +117,12 @@ function styles() {
 
   function building() {
     return src([
-      'app/css/style.min.css',
-      'app/images/*.*',
-      '!app/images/*.svg',
-      'app/images/sprite.svg',
+      'app/css/*.css',
+      'app/images/*.webp',
+      'app/images/*.svg',
       'app/fonts/*.*',
       'app/js/main.min.js',
+      'app/js/filter.min.js',
       'app/*.html'
     ], {base : 'app'})
     .pipe(dest('dist'))
@@ -130,7 +141,8 @@ function styles() {
   exports.building = building;
   exports.sprite = sprite;
   exports.scripts = scripts;
+  exports.secondscripts = secondscripts;
   exports.watching = watching;
 
   exports.build = series(cleanDist, building);
-  exports.default = parallel(styles, scripts, pages, watching);
+  exports.default = parallel(styles, scripts, secondscripts, pages, watching);
